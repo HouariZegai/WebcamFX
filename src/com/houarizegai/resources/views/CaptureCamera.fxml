@@ -6,10 +6,15 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
 
 <BorderPane stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.java.controllers.CaptureCameraController">
    <center>
-      <ImageView fx:id="imageView" fitHeight="480.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true" />
+      <StackPane fx:id="imgContainer" styleClass="imgContainer">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="480.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </StackPane>
    </center>
    <bottom>
       <HBox fx:id="bottomHBox" alignment="BOTTOM_CENTER" spacing="20.0" style="-fx-background-color: #EEE;" BorderPane.alignment="CENTER">

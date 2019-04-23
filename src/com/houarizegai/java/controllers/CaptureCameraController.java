@@ -9,13 +9,17 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import com.github.sarxos.webcam.Webcam;
+import javafx.beans.binding.Bindings;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.StackPane;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
 import javax.imageio.ImageIO;
 
@@ -25,12 +29,19 @@ public class CaptureCameraController implements Initializable {
     public static boolean isCapture = false; // For stop & resume thread of camera
 
     @FXML
+    private StackPane imgContainer;
+
+    @FXML
     private ImageView imageView;
 
     private FileChooser fileChooser; // For select path of saving picture captured
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        /* Bind views */
+        imageView.fitWidthProperty().bind(imgContainer.widthProperty());
+        imageView.fitHeightProperty().bind(imgContainer.heightProperty());
+
         /* Init camera */
         webcam = Webcam.getDefault();
         if(webcam == null) {

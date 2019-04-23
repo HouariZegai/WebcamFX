@@ -21,7 +21,7 @@ public class App extends Application {
         } catch(IOException ioe) {
             ioe.printStackTrace();
         }
-
+        stage.setTitle("WebcamFX");
         stage.show();
     }
 
