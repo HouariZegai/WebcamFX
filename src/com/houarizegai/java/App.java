@@ -13,12 +13,15 @@ import java.io.IOException;
 public class App extends Application {
     
     @Override
-    public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/com/houarizegai/resources/views/CaptureCamera.fxml"));
-        
-        Scene scene = new Scene(root);
-        
-        stage.setScene(scene);
+    public void start(Stage stage) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/com/houarizegai/resources/views/CaptureCamera.fxml"));
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+        } catch(IOException ioe) {
+            ioe.printStackTrace();
+        }
+
         stage.show();
     }
 
@@ -29,7 +32,7 @@ public class App extends Application {
     
     @Override
     public void stop() {
-        CaptureCameraController.isCapture = true;
+        CaptureCameraController.isCapture = true; // Kill the thread of camera
     }
     
 }
