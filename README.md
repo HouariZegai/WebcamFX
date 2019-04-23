@@ -17,7 +17,8 @@ Open the camera, take pictures and save them using Javafx.
 * Camera in your computer.
 
 ### Screenshoot
-* Coming soon !
+* Main view
+![Main view picture](screenshot/webcamfx-v0.PNG)
 
 ### Installation
 1. Download the repository files (project) from the download section or clone this project by typing in the bash the following command:
