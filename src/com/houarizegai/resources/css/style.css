@@ -1,4 +1,4 @@
-.icon:hover {
-    -fx-fill: #2196f3;
+.icon {
+    -fx-fill: darkcyan;
     -fx-cursor: hand
 }
