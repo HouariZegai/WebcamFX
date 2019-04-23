@@ -12,6 +12,8 @@ import com.github.sarxos.webcam.Webcam;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 
@@ -31,6 +33,10 @@ public class CaptureCameraController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         /* Init camera */
         webcam = Webcam.getDefault();
+        if(webcam == null) {
+            System.out.println("Camera not found !");
+            System.exit(-1);
+        }
         webcam.setViewSize(new Dimension(640, 480));
         webcam.open();
 
