@@ -1,11 +1,12 @@
-package webcamfx;
+package com.houarizegai.java.controllers;
 
-import com.github.sarxos.webcam.Webcam;
 import java.awt.Dimension;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import com.github.sarxos.webcam.Webcam;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -23,7 +24,6 @@ public class CaptureCameraController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
         webcam = Webcam.getDefault();
         webcam.setViewSize(new Dimension(640, 480));
         webcam.open();

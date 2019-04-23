@@ -1,17 +1,20 @@
 
-package webcamfx;
+package com.houarizegai.java;
 
+import com.houarizegai.java.controllers.CaptureCameraController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class WebcamFx extends Application {
+import java.io.IOException;
+
+public class App extends Application {
     
     @Override
-    public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("CaptureCamera.fxml"));
+    public void start(Stage stage) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/com/houarizegai/resources/views/CaptureCamera.fxml"));
         
         Scene scene = new Scene(root);
         
@@ -21,7 +24,7 @@ public class WebcamFx extends Application {
 
   
     public static void main(String[] args) {
-        launch(args);
+        Application.launch(args);
     }
     
     @Override
