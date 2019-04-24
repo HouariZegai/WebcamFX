@@ -5,6 +5,7 @@ Open the camera, take pictures and save them using Javafx.
 
 ### Features
 * Very simple to use.
+* Responsive design.
 * Capture and save pictures.
 * <del>Video recording</del>.
 
