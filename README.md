@@ -1,7 +1,7 @@
 # WebcamFX :camera:
 Open the camera, take pictures and save them using Javafx.
 
-[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/HouariZegai/WebcamFX/blob/master/LICENSE)
+[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ### Features
 * Very simple to use.
@@ -31,11 +31,5 @@ Open the camera, take pictures and save them using Javafx.
 ### Contributing
 If you want to contribute to this project and make it better with new ideas, your pull request is very welcomed.
 If you find any issue just put it in the repository issue section, thank you.
-
-### Follow me
-[Facebook](https://www.facebook.com/ZegaiBlog) |
-[Youtube](https://www.youtube.com/HouariZegai) |
-[Twitter](https://www.twitter.com/HouariZegai) |
-[Instagram](https://www.instagram.com/HouariZegai)
 
 .سبحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لا إِلهَ إِلأَ انْتَ أَسْتَغْفِرُكَ وَأَتْوبُ إِلَيْكَ
